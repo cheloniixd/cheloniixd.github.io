@@ -1,0 +1,47 @@
+/* .ca_link:link {
+    font-family: 'Courier New', Courier, monospace;
+    color:
+}
+
+.ca_link:visited {
+    color:green;
+}
+
+.ca_link:hover {
+    color: hotpink;
+} */
+
+.ca_link:link, .ca_link:visited {
+    background-color: #333;
+    color: #74787D;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    margin: 5px 0px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    font-weight: bold;
+    border: 1px solid #74787D;
+}
+
+.ca_link:hover, .ca_link:active {
+    background: #ffffff;
+    color: #000000;
+    border-color: rgb(0, 0, 0);
+    border-width: 1px;
+    border-style: solid;
+}
+
+.abt_us_footer_fix {
+    font-style: normal;
+}
+
+.gallery-sec-pad {
+    padding: 0px 5px 35px;
+}
+
+.col-sm-6.text-right > img {
+    margin-top: 40px;
+}
