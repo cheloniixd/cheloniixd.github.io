@@ -1,0 +1,38 @@
+.ca_img:hover {
+    transform: scale(1.05);
+}
+
+.ca_link {
+    color: #ffffff;
+}
+
+
+.abt_us_footer_fix {
+    font-style: normal;
+}
+
+.gallery-sec-pad {
+    padding: 0px 5px 35px;
+}
+
+.col-sm-6.text-right > img {
+    margin-top: 40px;
+}
+
+.header-logo-img {
+    padding-bottom: 5px;
+}
+
+@media (min-width:1200px) {
+    div.container.clearfix {
+        width: 1070px;
+    }
+}
+
+.abt-us-img {
+    margin-top: 20px;
+    border-radius: 5px;
+    border: #74787D 5px solid;
+    box-shadow: 5px 5px 5px #74787D;
+}
+
