@@ -803,13 +803,13 @@ body.active-preloader-ovh {
 }
 
 #minimal-bootstrap-carousel.slider-home-two .carousel-inner .item {
-  min-height: 780px;
+  min-height: 820px;
   height: 100%;
   width: 100%;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
-  background-color: #34424F;
+  /* background-size: cover; */
+  background-color: #000000;
 }
 
 #minimal-bootstrap-carousel.slider-home-three .carousel-inner .item {
