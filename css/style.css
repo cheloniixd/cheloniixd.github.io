@@ -799,10 +799,19 @@ body.active-preloader-ovh {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  background-color: #34424F;
+  background-color: #000000;
 }
 
 #minimal-bootstrap-carousel.slider-home-two .carousel-inner .item {
+  min-height: 820px;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: #000000;
+}
+#minimal-bootstrap-carousel.slider-home-two-proj .carousel-inner .item {
   min-height: 820px;
   height: 100%;
   width: 100%;
@@ -819,7 +828,7 @@ body.active-preloader-ovh {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  background-color: #34424F;
+  background-color: #000000;
 }
 
 .slider-home-one {
