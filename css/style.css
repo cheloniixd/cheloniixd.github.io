@@ -697,10 +697,10 @@ body.active-preloader-ovh {
   height: 59px;
   font-size: 48px;
   line-height: 59px;
-  color: #fff;
+  color: #b0b0b0;
   background: transparent;
   visibility: visible !important;
-  opacity: 1;
+  opacity: .95;
   font-weight: normal;
   margin-top: -20px;
   -webkit-transition: all 0.5s ease;
@@ -727,9 +727,12 @@ body.active-preloader-ovh {
 
 #minimal-bootstrap-carousel .carousel-control:hover {
   opacity: 1;
+  transform: scale(1.15);
+  transition: all 0.2s ease;
+  color: #fff;
 }
 
-/* processing for fadeing effect styles */
+/* processing for fading effect styles */
 .carousel-fade .carousel-inner .item {
   -webkit-transition-property: opacity;
   transition-property: opacity;
@@ -790,6 +793,7 @@ body.active-preloader-ovh {
 }
 #minimal-bootstrap-carousel .custom-navigation li.active {
   opacity: 1;
+  transform: scale(1.1);
 }
 
 #minimal-bootstrap-carousel.slider-home-one .carousel-inner .item {
@@ -818,7 +822,7 @@ body.active-preloader-ovh {
   background-repeat: no-repeat;
   background-position: center center;
   /* background-size: cover; */
-  background-color: #000000;
+  background-color: #ffffff;
 }
 
 #minimal-bootstrap-carousel.slider-home-three .carousel-inner .item {
