@@ -1,0 +1,99 @@
+
+/* My Variables */
+:root {
+  --offWhite: rgb(106, 104, 104);
+  --smoke: rgb(240, 240, 240);
+  --darkSmoke: rgb(35, 35, 40);
+  --carolinaBlue: rgb(25, 145, 205);
+  --bsDanger: rgb(255, 0, 0);
+  --bsWarning: rgb(250, 240, 35);
+  --bsInfo: rgb(10, 215, 255);
+  --bsSuccess: rgb(15, 180, 0);
+}
+
+.row.g-0 > .col-lg-4.col-sm-6 {
+  padding: 15px;
+  margin-left: 0; /* Reset any existing left margin */
+}
+
+.headerButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.skills-img {
+  height: 100px;
+  width: 100px;
+  margin-bottom: 5px;
+}
+
+.portfolio-pic {
+  border-radius: 50%;
+  border-style: groove;
+  border-color: var(--carolinaBlue);
+  height: 200px;
+  width: 175px;
+}
+
+.portfolio-header {
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio-links {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+}
+
+.portfolio-links-row2 {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+}
+
+.portfolio-links-livesite, .portfolio-links-github {
+  color: black;
+  background-color: white;
+  border: 5px;
+  border-radius: 5px;
+  padding: .75rem;
+  margin-top: .5rem;
+  margin-bottom: 0;
+  font-weight: bold;
+  transition: 325ms;
+}
+.portfolio-links-livesite:hover, .portfolio-links-github:hover {
+  transform: scale(1.15);
+  color: white;
+  background-color: var(--darkSmoke);
+}
+
+.contact-info-container {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.contact-info-link, .contact-info-div {
+  color: blueviolet;
+  transition: 325ms;
+}
+.contact-info-div:hover, .contact-info-link:hover {
+  transform: scale(1.25);
+  color: var(--bsInfo);
+}
+
+.contact-info-resume {
+  font-size: x-large;
+  margin-top: 5rem;
+  margin-bottom: .5rem;
+}
+
+.contact-info-phone-number {
+  margin-top: 2.5rem;
+}
