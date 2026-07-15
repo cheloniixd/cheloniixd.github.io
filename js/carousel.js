@@ -67,76 +67,58 @@
     {
       title: 'Computer Anything',
       badge: 'Brand Site',
-      image: 'assets/img/portfolio/computeranything.jpg',
+      image: 'assets/img/portfolio/computer_anything.png',
       alt: 'Computer Anything project preview',
-      description: 'Personal brand and portfolio landing page focused on clarity, trust, and conversion.',
+      description: "Bring your vision online, and let us handle the rest. Whether it's a powerful website, custom web application, or full-stack hosting solution, Computer Anything LLC builds and maintains it all. From backend engineering and database management to secure, reliable hosting and ongoing support, we've got you covered.",
       bullets: ['Responsive hero and section system', 'Clear value proposition hierarchy', 'Built to present work and contact info fast'],
-      link: null,
+      link: 'https://computeranything.dev/',
     },
     {
-      title: 'Clonebnb',
-      badge: 'Product UI',
-      image: 'assets/img/portfolio/clonebnb.jpg',
-      alt: 'Clonebnb project preview',
-      description: 'Booking-style interface concept with a polished, app-like presentation and strong visual rhythm.',
+      title: 'Wholesale Hub',
+      badge: 'SaaS / B2B',
+      image: 'assets/img/portfolio/wholesale_hub.png',
+      alt: 'Wholesale Hub project preview',
+      description: "An all-in-one wholesale ordering platform built for businesses that are done with spreadsheets and phone calls. Get your full catalog online in days, whether you embed it into your existing site, use the built-in storefront builder, or have us build something custom. Your customers get a modern self-service experience; you get real-time orders, automatic tracking, backorder management, and security that doesn't cut corners.",
       bullets: ['Card-based discovery flow', 'Responsive product layout', 'Designed for quick visual scanning'],
-      link: null,
+      link: 'https://demo.wholesalehub.dev/',
     },
     {
-      title: 'Cryptograph',
-      badge: 'Security / Data',
-      image: 'assets/img/portfolio/cryptograph.jpg',
-      alt: 'Cryptograph project preview',
-      description: 'Security-themed visual work with a technical, information-rich feel and a darker aesthetic.',
-      bullets: ['High-contrast data-forward styling', 'Compact information blocks', 'Built to feel serious and technical'],
-      link: null,
+      title: 'NexGen Truck & Trailer Parts',
+      badge: 'E-commerce',
+      image: 'assets/img/portfolio/nexgen.png',
+      alt: 'NexGen Truck & Trailer Parts project preview',
+      description: "The first instance of wholesalehub.dev, this e-commerce platform was built for a local truck and trailer parts supplier. It features a comprehensive product catalog, user-friendly shopping experience, and secure payment processing.",
+      bullets: ['User-friendly shopping experience', 'Comprehensive product catalog', 'Secure payment processing'],
+      link: 'https://nex-genparts.com/',
     },
     {
-      title: 'MAH',
-      badge: 'Portfolio Piece',
-      image: 'assets/img/portfolio/mah.jpg',
-      alt: 'MAH project preview',
-      description: 'Minimal portfolio visual that keeps the focus on layout, typography, and composition.',
+      title: 'Computer Anything Blog',
+      badge: 'Technology Blog',
+      image: 'assets/img/portfolio/cpta_blog.png',
+      alt: 'Computer Anything Blog project preview',
+      description: "Full-stack blog platform featuring secure user authentication and complete CRUD functionality, built with a RESTful API using Flask. The React frontend communicates with the backend via Axios and Redux for efficient state management. Users can tag posts, vote, and comment in real time. The app is fully dockerized, reverse-proxied with NGINX, and deployed on a self-managed VPS.",
       bullets: ['Simple structure', 'Typography-first layout', 'Designed to showcase polish'],
-      link: null,
+      link: 'https://blog.computeranything.dev/',
     },
     {
-      title: 'Stuck Over Clone',
-      badge: 'UI Clone',
-      image: 'assets/img/portfolio/stuckoverclone.jpg',
-      alt: 'Stuck Over Clone project preview',
-      description: 'A clone study built to sharpen frontend precision, spacing, and interaction detail.',
+      title: 'API Looter',
+      badge: 'Educational Open Source Project',
+      image: 'assets/img/portfolio/api_looter.png',
+      alt: 'API Looter project preview',
+      description: "Open-source developer tool for browsing and testing curated public APIs. It exposes a Flask backend for managing API metadata and user interactions, with dynamic frontend rendering via Jinja2 templates. Deployed in Docker containers on a personal VPS, using NGINX for reverse proxying and HTTPS.",
       bullets: ['Focus on fidelity', 'Recreated spacing and hierarchy', 'Good for proving UI discipline'],
-      link: null,
+      link: 'https://apilooter.computeranything.dev/',
     },
     {
-      title: 'Todo App',
-      badge: 'Utility App',
-      image: 'assets/img/portfolio/todo_app.jpg',
-      alt: 'Todo App project preview',
-      description: 'Simple productivity app concept with a clean interface and a straightforward task flow.',
-      bullets: ['Easy-to-scan controls', 'Useful small-screen layout', 'Minimal but practical UX'],
-      link: null,
+      title: 'Tulla Contracting',
+      badge: 'Business Website',
+      image: 'assets/img/portfolio/tulla_contracting.png',
+      alt: 'Tulla Contracting project preview',
+      description: "Professional website for a local contracting business, designed to highlight services and facilitate customer inquiries. The site features a clean, responsive design with easy navigation and clear calls to action.",
+      bullets: ['Responsive design', 'Easy navigation', 'Showcases services effectively'],
+      link: 'https://tullacontracting.com/',
     },
   ];
-
-  projects.forEach((project) => {
-    if (!project.images) project.images = [project.image];
-  });
-
-  const projectDetailsBtn = document.getElementById('projectDetailsBtn');
-  const projectModal = document.getElementById('projectModal');
-  const projectModalBackdrop = document.getElementById('projectModalBackdrop');
-  const projectModalClose = document.getElementById('projectModalClose');
-  const modalImage = document.getElementById('modalImage');
-  const modalPrevImg = document.getElementById('modalPrevImg');
-  const modalNextImg = document.getElementById('modalNextImg');
-  const modalDots = document.getElementById('modalDots');
-  const modalProjectTitle = document.getElementById('modalProjectTitle');
-  const modalProjectBadge = document.getElementById('modalProjectBadge');
-  const modalProjectDescription = document.getElementById('modalProjectDescription');
-  const modalProjectBullets = document.getElementById('modalProjectBullets');
-  const modalProjectLink = document.getElementById('modalProjectLink');
 
   if (projectRail && projectPrev && projectNext && projectTitle && projectBadge && projectImage && projectDescription && projectBullets && projectLink) {
     let projectIndex = 0;
@@ -196,80 +178,5 @@
 
     renderProject();
     setInterval(() => goProject(projectIndex + 1), 5200);
-
-    if (projectDetailsBtn && projectModal && projectModalBackdrop && projectModalClose && modalImage && modalPrevImg && modalNextImg && modalDots && modalProjectTitle && modalProjectBadge && modalProjectDescription && modalProjectBullets && modalProjectLink) {
-      let galleryIndex = 0;
-      let lastFocused = null;
-
-      const renderGallery = () => {
-        const project = projects[projectIndex];
-        const images = project.images;
-
-        modalImage.src = images[galleryIndex];
-        modalImage.alt = project.alt;
-
-        modalDots.innerHTML = images.map((_, i) => `<button class="project-modal-dot${i === galleryIndex ? ' active' : ''}" data-img-index="${i}" aria-label="Screenshot ${i + 1}"></button>`).join('');
-        modalDots.querySelectorAll('[data-img-index]').forEach((dot) => {
-          dot.addEventListener('click', () => {
-            galleryIndex = Number(dot.getAttribute('data-img-index'));
-            renderGallery();
-          });
-        });
-
-        const hasMultiple = images.length > 1;
-        modalPrevImg.hidden = !hasMultiple;
-        modalNextImg.hidden = !hasMultiple;
-        modalDots.hidden = !hasMultiple;
-      };
-
-      const renderModal = () => {
-        const project = projects[projectIndex];
-
-        galleryIndex = 0;
-        renderGallery();
-
-        modalProjectTitle.textContent = project.title;
-        modalProjectBadge.textContent = project.badge;
-        modalProjectDescription.textContent = project.description;
-        modalProjectBullets.innerHTML = project.bullets.map((bullet) => `<li>${bullet}</li>`).join('');
-
-        if (project.link) {
-          modalProjectLink.href = project.link;
-          modalProjectLink.hidden = false;
-        } else {
-          modalProjectLink.hidden = true;
-        }
-      };
-
-      const openModal = () => {
-        lastFocused = document.activeElement;
-        renderModal();
-        projectModal.hidden = false;
-        document.body.style.overflow = 'hidden';
-        projectModalClose.focus();
-      };
-
-      const closeModal = () => {
-        projectModal.hidden = true;
-        document.body.style.overflow = '';
-        if (lastFocused) lastFocused.focus();
-      };
-
-      const goGallery = (nextIndex) => {
-        const images = projects[projectIndex].images;
-        galleryIndex = (nextIndex + images.length) % images.length;
-        renderGallery();
-      };
-
-      projectDetailsBtn.addEventListener('click', openModal);
-      projectModalClose.addEventListener('click', closeModal);
-      projectModalBackdrop.addEventListener('click', closeModal);
-      modalPrevImg.addEventListener('click', () => goGallery(galleryIndex - 1));
-      modalNextImg.addEventListener('click', () => goGallery(galleryIndex + 1));
-
-      document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && !projectModal.hidden) closeModal();
-      });
-    }
   }
 })();

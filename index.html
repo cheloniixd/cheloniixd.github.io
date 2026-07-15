@@ -164,9 +164,6 @@
           <div class="project-stage-body">
             <div class="project-stage-media tilt-card">
               <img id="projectImage" src="" alt="" class="project-stage-image" />
-              <button class="project-stage-trigger" id="projectDetailsBtn" aria-label="View project details"></button>
-              <span class="project-stage-hint">Click to view details</span>
-              <span class="project-stage-overlay">View Details</span>
             </div>
 
             <div class="project-stage-copy">
@@ -202,57 +199,59 @@
       <div class="testimonial-grid">
         <article class="testimonial-card glow-border">
           <div class="proof-header">
-            <div class="proof-logo">CA</div>
+            <div class="proof-logo">TC</div>
             <div class="proof-meta">
-              <h4>Client Name</h4>
-              <p class="proof-industry">Industry / sector</p>
+              <h4>Tulla Contracting</h4>
+              <p class="proof-industry">Construction / Contracting</p>
             </div>
           </div>
           <p class="proof-project">Short summary of the project delivered and the problem it solved.</p>
           <ul class="proof-tags">
-            <li>Tech Tag</li>
-            <li>Tech Tag</li>
-            <li>Tech Tag</li>
+            <li>Web Development</li>
+            <li>Responsive Design</li>
+            <li>User Experience</li>
           </ul>
-          <blockquote class="proof-quote">“Outstanding execution and communication. Delivered exactly what we needed under a tight timeline.”</blockquote>
-          <a href="#" class="proof-link" target="_blank" rel="noopener">Visit Website ↗</a>
+          <blockquote class="proof-quote">
+            “Working with Duncan was an absolute game-changer for our company. From the
+            very first consultation, he demonstrated an impressive depth of knowledge, creativity, and professionalism
+            that immediately put us at ease. Duncan took the time to understand our brand, our values, and the unique
+            challenges of the contracting industry, translating all of that into a stunning, user-friendly website that
+            exceeded every expectation.”
+          </blockquote>
+          <a href="https://tullacontracting.com/" class="proof-link" target="_blank" rel="noopener">Visit Website ↗</a>
         </article>
 
         <article class="testimonial-card glow-border">
           <div class="proof-header">
-            <div class="proof-logo">CA</div>
+            <div class="proof-logo">SHVC</div>
             <div class="proof-meta">
-              <h4>Client Name</h4>
+              <h4>Stellar Horizon Venture Corp</h4>
               <p class="proof-industry">Industry / sector</p>
             </div>
           </div>
           <p class="proof-project">Short summary of the project delivered and the problem it solved.</p>
           <ul class="proof-tags">
-            <li>Tech Tag</li>
-            <li>Tech Tag</li>
-            <li>Tech Tag</li>
+            <li>DNS Security</li>
+            <li>Email Authentication</li>
+            <li>DMARC Setup</li>
           </ul>
-          <blockquote class="proof-quote">“Our workflows are faster and the product looks significantly more professional now.”</blockquote>
-          <a href="#" class="proof-link" target="_blank" rel="noopener">Visit Website ↗</a>
+          <blockquote class="proof-quote">
+            “I can't say enough good things about working with Duncan. I ran into a major DNS issue while connecting my
+            Google Workspace and Squarespace accounts that completely broke my email. I could still receive messages,
+            but I couldn't send anything, which became a huge problem because we had important client meetings coming
+            up and I couldn't even send the calendar invites. Duncan jumped in right away, tracked down every issue
+            with my DNS records, corrected the configuration, and also set up DMARC properly so my emails would stop
+            getting rejected or ending up in spam. He explained what was wrong, fixed everything much faster than I
+            expected, and made sure it was all working before wrapping up. Because he got everything resolved so
+            quickly, I was able to send out the meeting invitations, hold the meetings as planned, and ultimately
+            secure a major contract for my company. His work had a direct impact on our business. If you're dealing
+            with Google Workspace, Squarespace, DNS, email authentication, or anything similar, I would absolutely
+            recommend Duncan. He's knowledgeable, responsive, and gets the job done. We'll definitely be using him
+            again for our future IT needs”
+          </blockquote>
+          <a href="https://www.upwork.com/freelancers/~014f16904e75076409?mp_source=share" class="proof-link" target="_blank" rel="noopener">Visit Website ↗</a>
         </article>
 
-        <article class="testimonial-card glow-border">
-          <div class="proof-header">
-            <div class="proof-logo">CA</div>
-            <div class="proof-meta">
-              <h4>Client Name</h4>
-              <p class="proof-industry">Industry / sector</p>
-            </div>
-          </div>
-          <p class="proof-project">Short summary of the project delivered and the problem it solved.</p>
-          <ul class="proof-tags">
-            <li>Tech Tag</li>
-            <li>Tech Tag</li>
-            <li>Tech Tag</li>
-          </ul>
-          <blockquote class="proof-quote">“Rare combo of technical depth + design sense. Reliable from planning through deployment.”</blockquote>
-          <a href="#" class="proof-link" target="_blank" rel="noopener">Visit Website ↗</a>
-        </article>
       </div>
     </section>
 
@@ -268,39 +267,12 @@
         <h2>Need a freelancer who can handle frontend, backend, and DevOps?</h2>
         <p class="contact-copy">Tell me what you’re building and I’ll help you scope, architect, and ship it fast.</p>
         <div class="hero-ctas center">
-          <a href="mailto:you@yourdomain.com" class="btn btn-primary magnetic">you@yourdomain.com</a>
-          <a href="#" class="btn btn-secondary magnetic">Book a Call</a>
+          <a href="mailto:duncan@computeranything.dev" class="btn btn-primary magnetic">duncan@computeranything.dev</a>
+          <a href="https://computeranything.dev/contact" class="btn btn-secondary magnetic" target="_blank" rel="noopener">Book a Call</a>
         </div>
       </div>
     </section>
   </main>
-
-  <div class="project-modal" id="projectModal" hidden>
-    <div class="project-modal-backdrop" id="projectModalBackdrop"></div>
-    <div class="project-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modalProjectTitle">
-      <button class="project-modal-close" id="projectModalClose" aria-label="Close project details">✕</button>
-
-      <div class="project-modal-gallery">
-        <img id="modalImage" src="" alt="" class="project-modal-image" />
-        <button class="project-modal-nav prev" id="modalPrevImg" aria-label="Previous screenshot">←</button>
-        <button class="project-modal-nav next" id="modalNextImg" aria-label="Next screenshot">→</button>
-        <div class="project-modal-dots" id="modalDots"></div>
-      </div>
-
-      <div class="project-modal-body">
-        <div class="project-stage-header">
-          <div>
-            <p class="project-kicker">PROJECT DETAILS</p>
-            <h3 id="modalProjectTitle">Loading project</h3>
-          </div>
-          <span class="project-badge" id="modalProjectBadge">—</span>
-        </div>
-        <p class="project-description" id="modalProjectDescription"></p>
-        <ul class="project-bullets" id="modalProjectBullets"></ul>
-        <a id="modalProjectLink" class="btn btn-primary project-link" href="#" target="_blank" rel="noopener">View project ↗</a>
-      </div>
-    </div>
-  </div>
 
   <footer class="container footer">
     <p>© <span id="year"></span> Computer Anything • Built with HTML, CSS, and Vanilla JS</p>

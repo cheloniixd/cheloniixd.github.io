@@ -689,12 +689,12 @@ h1 {
 
 .project-stage-media {
   position: relative;
-  padding: 0.6rem;
+  /* padding: 0.6rem; */
   border-radius: 16px;
   overflow: hidden;
-  border: 1px solid var(--line);
+  /* border: 1px solid var(--line); */
   aspect-ratio: 4 / 3;
-  background: rgba(255, 255, 255, 0.03);
+  /* background: rgba(255, 255, 255, 0.03); */
 }
 
 .project-stage-image {
@@ -703,61 +703,6 @@ h1 {
   object-fit: cover;
   display: block;
   border-radius: 12px;
-}
-
-.project-stage-trigger {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  border: 0;
-  padding: 0;
-  background: transparent;
-  cursor: pointer;
-}
-
-.project-stage-trigger:focus-visible {
-  outline: 2px solid var(--primary);
-  outline-offset: -2px;
-}
-
-.project-stage-hint {
-  position: absolute;
-  right: 0.9rem;
-  bottom: 0.9rem;
-  z-index: 1;
-  font-size: 0.72rem;
-  padding: 0.35rem 0.6rem;
-  border-radius: 999px;
-  background: rgba(9, 13, 24, 0.65);
-  color: #dbffe8;
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  pointer-events: none;
-  transition: opacity 0.2s ease;
-}
-
-.project-stage-overlay {
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(9, 13, 24, 0.6);
-  color: #fff;
-  font-weight: 650;
-  font-size: 1.05rem;
-  letter-spacing: 0.02em;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.2s ease;
-}
-
-.project-stage-media:hover .project-stage-overlay {
-  opacity: 1;
-}
-
-.project-stage-media:hover .project-stage-hint {
-  opacity: 0;
 }
 
 .project-stage-copy {
@@ -797,120 +742,6 @@ h1 {
 
 .project-link[hidden] {
   display: none;
-}
-
-.project-modal {
-  position: fixed;
-  inset: 0;
-  z-index: 200;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1.2rem;
-}
-
-.project-modal[hidden] {
-  display: none;
-}
-
-.project-modal-backdrop {
-  position: absolute;
-  inset: 0;
-  background: rgba(6, 9, 16, 0.75);
-  backdrop-filter: blur(6px);
-}
-
-.project-modal-dialog {
-  position: relative;
-  z-index: 1;
-  width: min(960px, 100%);
-  max-height: 88vh;
-  overflow-y: auto;
-  background: var(--surface-2);
-  border: 1px solid var(--line);
-  border-radius: 20px;
-  box-shadow: var(--shadow);
-  display: grid;
-  grid-template-columns: 1.05fr 0.95fr;
-}
-
-.project-modal-close {
-  position: absolute;
-  top: 0.8rem;
-  right: 0.8rem;
-  z-index: 2;
-  width: 34px;
-  height: 34px;
-  border-radius: 50%;
-  border: 1px solid var(--line);
-  background: rgba(9, 13, 24, 0.6);
-  color: var(--text);
-  cursor: pointer;
-}
-
-.project-modal-gallery {
-  position: relative;
-  background: rgba(255, 255, 255, 0.02);
-  aspect-ratio: 4 / 3;
-  overflow: hidden;
-}
-
-.project-modal-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.project-modal-nav {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  background: rgba(9, 13, 24, 0.55);
-  color: #fff;
-  cursor: pointer;
-}
-
-.project-modal-nav.prev {
-  left: 0.7rem;
-}
-
-.project-modal-nav.next {
-  right: 0.7rem;
-}
-
-.project-modal-dots {
-  position: absolute;
-  bottom: 0.8rem;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 0.4rem;
-}
-
-.project-modal-dot {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  border: 0;
-  background: rgba(255, 255, 255, 0.32);
-  cursor: pointer;
-}
-
-.project-modal-dot.active {
-  background: var(--primary);
-  box-shadow: 0 0 10px rgba(57, 255, 136, 0.75);
-}
-
-.project-modal-body {
-  padding: 1.6rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1.1rem;
 }
 
 .testimonial-grid {
@@ -1147,15 +978,6 @@ h1 {
   }
 
   .project-stage-media {
-    aspect-ratio: 16 / 9;
-  }
-
-  .project-modal-dialog {
-    grid-template-columns: minmax(0, 1fr);
-    max-height: 92vh;
-  }
-
-  .project-modal-gallery {
     aspect-ratio: 16 / 9;
   }
 
