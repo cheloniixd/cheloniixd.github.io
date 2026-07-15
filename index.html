@@ -20,26 +20,48 @@
         <span class="brand-text">Computer Anything</span>
       </a>
       <nav class="nav-links" aria-label="Primary navigation">
-        <a href="#services">Services</a>
+        <a href="#stack">Stack</a>
         <a href="#projects">Projects</a>
         <a href="#testimonials">Testimonials</a>
-        <a href="#stack">Stack</a>
         <a href="#contact">Contact</a>
       </nav>
-      <a class="btn btn-ghost" href="#contact">Hire Me</a>
+      <div class="social-links" aria-label="Profile links">
+        <a href="https://github.com/cheloniixd" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
+          <span class="social-icon" style="--icon-src: url('https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/github.svg');"></span>
+        </a>
+        <a href="https://www.linkedin.com/in/duncan-murchison/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
+          <span class="social-icon" style="--icon-src: url('https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/linkedin.svg');"></span>
+        </a>
+        <a href="https://www.upwork.com/freelancers/~014f16904e75076409?mp_source=share" target="_blank" rel="noopener" aria-label="Upwork" title="Upwork">
+          <span class="social-icon" style="--icon-src: url('https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/upwork.svg');"></span>
+        </a>
+        <a href="https://drive.google.com/file/d/1lNOXDM4ODlL6eWJhsRUN8Bv0Iq936PAP/view?usp=drive_link" target="_blank" rel="noopener" class="resume-link">Resume ↗</a>
+      </div>
       <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">☰</button>
     </div>
     <div class="mobile-nav" id="mobileNav">
-      <a href="#services">Services</a>
+      <a href="#stack">Stack</a>
       <a href="#projects">Projects</a>
       <a href="#testimonials">Testimonials</a>
-      <a href="#stack">Stack</a>
       <a href="#contact">Contact</a>
+      <a href="https://github.com/cheloniixd" target="_blank" rel="noopener">GitHub ↗</a>
+      <a href="https://www.linkedin.com/in/duncan-murchison/" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <a href="https://www.upwork.com/freelancers/~014f16904e75076409?mp_source=share" target="_blank" rel="noopener">Upwork ↗</a>
+      <a href="https://drive.google.com/file/d/1lNOXDM4ODlL6eWJhsRUN8Bv0Iq936PAP/view?usp=drive_link" target="_blank" rel="noopener">Resume ↗</a>
     </div>
   </header>
 
   <main>
     <section class="hero container section reveal" id="home">
+      <div class="hero-float-icons" aria-hidden="true">
+        <img class="float-icon float-icon-1" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="" />
+        <img class="float-icon float-icon-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="" />
+        <img class="float-icon float-icon-3" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="" />
+        <img class="float-icon float-icon-4" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="" />
+        <img class="float-icon float-icon-5" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="" />
+        <img class="float-icon float-icon-6" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-original.svg" alt="" />
+      </div>
+
       <div class="hero-left">
         <p class="eyebrow">FREELANCE • FULL STACK • DEVOPS • SECURITY-MINDED</p>
         <h1>
@@ -80,11 +102,11 @@
       <div class="hero-right">
         <article class="profile-card glow-border tilt-card">
           <div class="profile-image-wrap">
-            <img src="assets/images/profile-placeholder.jpg" alt="Photo of Cheloniixd" class="profile-image" />
+            <img src="/assets/img/profile.jpg" alt="Photo of Cheloniixd" class="profile-image" />
             <span class="status-pill">● Available for Freelance</span>
           </div>
           <div class="profile-meta">
-            <h2>Your Name Here</h2>
+            <h2>Duncan Murchison</h2>
             <p>Full Stack Engineer • DevOps • Security Playbooks</p>
           </div>
         </article>
@@ -92,20 +114,16 @@
         <div class="exp-slider" id="expSlider" aria-label="Experience highlights slider">
           <div class="exp-track" id="expTrack">
             <article class="exp-card glow-border">
-              <h4>Client Portals</h4>
-              <p>Built invoice and operations portals with auth, payments, and user workflows.</p>
+              <h4>Full Stack Development</h4>
+              <p>Build robust apps and portals with clean UX and dependable architecture.</p>
             </article>
             <article class="exp-card glow-border">
-              <h4>DevOps + CI/CD</h4>
-              <p>Automated deployments, environment setup, and release reliability with observability in mind.</p>
+              <h4>DevOps & Automation</h4>
+              <p>CI/CD, deployment workflows, infrastructure scripting, and reliability improvements.</p>
             </article>
             <article class="exp-card glow-border">
-              <h4>Ethical Hacking Playbooks</h4>
-              <p>Documented security workflows and hardening paths to reduce risk and improve readiness.</p>
-            </article>
-            <article class="exp-card glow-border">
-              <h4>Marketing + Conversion Frontends</h4>
-              <p>Crafted focused pages that communicate value and convert visitors into leads.</p>
+              <h4>Security Hardening</h4>
+              <p>Security-first patterns, playbook-driven checks, and practical vulnerability reduction.</p>
             </article>
           </div>
           <div class="slider-controls">
@@ -116,113 +134,135 @@
       </div>
     </section>
 
-    <section class="container section reveal" id="services">
-      <div class="section-head">
-        <p class="kicker">SERVICES</p>
-        <h2>Everything you need to ship + scale confidently</h2>
-      </div>
-      <div class="services-grid">
-        <article class="service-card glow-border tilt-card">
-          <h3>Full Stack Development</h3>
-          <p>Build robust apps and portals with clean UX and dependable architecture.</p>
-        </article>
-        <article class="service-card glow-border tilt-card">
-          <h3>DevOps & Automation</h3>
-          <p>CI/CD, deployment workflows, infrastructure scripting, and reliability improvements.</p>
-        </article>
-        <article class="service-card glow-border tilt-card">
-          <h3>Security Hardening</h3>
-          <p>Security-first patterns, playbook-driven checks, and practical vulnerability reduction.</p>
-        </article>
+    <section class="reveal stack-banner" id="stack" aria-label="Technology stack">
+      <div class="logo-marquee" aria-label="Technology stack marquee">
+        <div class="logo-track" id="skillsTrack"></div>
       </div>
     </section>
 
     <section class="container section reveal" id="projects">
+      <div class="section-float-icons" aria-hidden="true">
+        <img class="float-icon is-faint" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" alt="" style="top: 8%; left: 3%; animation-duration: 9s;" />
+        <img class="float-icon is-faint" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="" style="top: 70%; left: 92%; animation-duration: 10s; animation-delay: -3s;" />
+        <img class="float-icon is-faint" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg" alt="" style="top: 55%; left: 5%; animation-duration: 8.5s; animation-delay: -5s;" />
+      </div>
+
       <div class="section-head">
         <p class="kicker">FEATURED WORK</p>
         <h2>Selected projects across product, ops, and growth</h2>
       </div>
-      <div class="project-grid">
-        <article class="project-card glow-border tilt-card">
-          <header>
-            <h3>cpta_app</h3>
-            <span>Production App</span>
-          </header>
-          <p>Client portal for invoice workflows, public trust pages, and streamlined business operations.</p>
-          <ul>
-            <li>Python + TypeScript architecture</li>
-            <li>Payments and client-facing workflows</li>
-            <li>Public pages + testimonials integration</li>
-          </ul>
+      <div class="project-showcase">
+        <article class="project-stage glow-border" aria-label="Featured project">
+          <div class="project-stage-header">
+            <div>
+              <p class="project-kicker">CURRENT PROJECT</p>
+              <h3 id="projectTitle">Loading project</h3>
+            </div>
+            <span class="project-badge" id="projectBadge">—</span>
+          </div>
+
+          <div class="project-stage-body">
+            <div class="project-stage-media tilt-card">
+              <img id="projectImage" src="" alt="" class="project-stage-image" />
+              <button class="project-stage-trigger" id="projectDetailsBtn" aria-label="View project details"></button>
+              <span class="project-stage-hint">Click to view details</span>
+              <span class="project-stage-overlay">View Details</span>
+            </div>
+
+            <div class="project-stage-copy">
+              <p class="project-description" id="projectDescription"></p>
+              <ul class="project-bullets" id="projectBullets"></ul>
+              <a id="projectLink" class="btn btn-primary project-link" href="#" target="_blank" rel="noopener">View project ↗</a>
+            </div>
+          </div>
         </article>
 
-        <article class="project-card glow-border tilt-card">
-          <header>
-            <h3>dev_settings</h3>
-            <span>Ops + Security</span>
-          </header>
-          <p>Personal engineering environment and full cyber playbook for ethical security testing workflows.</p>
-          <ul>
-            <li>Shell-driven productivity systems</li>
-            <li>Terminal, editor, and workflow optimization</li>
-            <li>Security playbook documentation</li>
-          </ul>
-        </article>
-
-        <article class="project-card glow-border tilt-card">
-          <header>
-            <h3>wsh_marketing</h3>
-            <span>Marketing Site</span>
-          </header>
-          <p>Conversion-focused marketing frontend for Wholesale Hub, built for clarity and lead generation.</p>
-          <ul>
-            <li>Clean brand-forward design</li>
-            <li>Fast loading static pages</li>
-            <li>Strong CTA hierarchy</li>
-          </ul>
-        </article>
+        <div class="project-rail-panel">
+          <div class="project-rail" id="projectRail" aria-label="Project thumbnails"></div>
+          <div class="project-controls">
+            <button class="slider-btn" id="projectPrev" aria-label="Previous project">←</button>
+            <button class="slider-btn" id="projectNext" aria-label="Next project">→</button>
+          </div>
+        </div>
       </div>
     </section>
 
     <section class="container section reveal" id="testimonials">
+      <div class="section-float-icons" aria-hidden="true">
+        <img class="float-icon is-faint" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="" style="top: 12%; left: 92%; animation-duration: 9.5s; animation-delay: -1.5s;" />
+        <img class="float-icon is-faint" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" alt="" style="top: 65%; left: 4%; animation-duration: 8s; animation-delay: -4s;" />
+        <img class="float-icon is-faint" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" alt="" style="top: 20%; left: 6%; animation-duration: 11s; animation-delay: -2.5s;" />
+      </div>
+
       <div class="section-head">
         <p class="kicker">SOCIAL PROOF</p>
-        <h2>What clients say</h2>
+        <h2>Client work and the results it delivered</h2>
       </div>
 
-      <div class="testimonial-slider" id="testimonialSlider">
-        <div class="testimonial-track" id="testimonialTrack">
-          <article class="testimonial-card glow-border">
-            <p>“Outstanding execution and communication. Delivered exactly what we needed under a tight timeline.”</p>
-            <h4>Client A • Operations Director</h4>
-          </article>
-          <article class="testimonial-card glow-border">
-            <p>“Our workflows are faster and the product looks significantly more professional now.”</p>
-            <h4>Client B • Founder</h4>
-          </article>
-          <article class="testimonial-card glow-border">
-            <p>“Rare combo of technical depth + design sense. Reliable from planning through deployment.”</p>
-            <h4>Client C • Agency Lead</h4>
-          </article>
-        </div>
-      </div>
-      <div class="dots" id="testimonialDots" aria-label="Testimonial controls"></div>
-    </section>
+      <div class="testimonial-grid">
+        <article class="testimonial-card glow-border">
+          <div class="proof-header">
+            <div class="proof-logo">CA</div>
+            <div class="proof-meta">
+              <h4>Client Name</h4>
+              <p class="proof-industry">Industry / sector</p>
+            </div>
+          </div>
+          <p class="proof-project">Short summary of the project delivered and the problem it solved.</p>
+          <ul class="proof-tags">
+            <li>Tech Tag</li>
+            <li>Tech Tag</li>
+            <li>Tech Tag</li>
+          </ul>
+          <blockquote class="proof-quote">“Outstanding execution and communication. Delivered exactly what we needed under a tight timeline.”</blockquote>
+          <a href="#" class="proof-link" target="_blank" rel="noopener">Visit Website ↗</a>
+        </article>
 
-    <section class="container section reveal" id="stack">
-      <div class="section-head">
-        <p class="kicker">TECH STACK</p>
-        <h2>Tooling I use to deliver serious results</h2>
-      </div>
-      <div class="logo-marquee" aria-label="Technology stack marquee">
-        <div class="logo-track">
-          <span>Python</span><span>TypeScript</span><span>JavaScript</span><span>HTML/CSS</span><span>Bash</span><span>Docker</span><span>GitHub Actions</span><span>Linux</span><span>PostgreSQL</span><span>CI/CD</span>
-          <span>Python</span><span>TypeScript</span><span>JavaScript</span><span>HTML/CSS</span><span>Bash</span><span>Docker</span><span>GitHub Actions</span><span>Linux</span><span>PostgreSQL</span><span>CI/CD</span>
-        </div>
+        <article class="testimonial-card glow-border">
+          <div class="proof-header">
+            <div class="proof-logo">CA</div>
+            <div class="proof-meta">
+              <h4>Client Name</h4>
+              <p class="proof-industry">Industry / sector</p>
+            </div>
+          </div>
+          <p class="proof-project">Short summary of the project delivered and the problem it solved.</p>
+          <ul class="proof-tags">
+            <li>Tech Tag</li>
+            <li>Tech Tag</li>
+            <li>Tech Tag</li>
+          </ul>
+          <blockquote class="proof-quote">“Our workflows are faster and the product looks significantly more professional now.”</blockquote>
+          <a href="#" class="proof-link" target="_blank" rel="noopener">Visit Website ↗</a>
+        </article>
+
+        <article class="testimonial-card glow-border">
+          <div class="proof-header">
+            <div class="proof-logo">CA</div>
+            <div class="proof-meta">
+              <h4>Client Name</h4>
+              <p class="proof-industry">Industry / sector</p>
+            </div>
+          </div>
+          <p class="proof-project">Short summary of the project delivered and the problem it solved.</p>
+          <ul class="proof-tags">
+            <li>Tech Tag</li>
+            <li>Tech Tag</li>
+            <li>Tech Tag</li>
+          </ul>
+          <blockquote class="proof-quote">“Rare combo of technical depth + design sense. Reliable from planning through deployment.”</blockquote>
+          <a href="#" class="proof-link" target="_blank" rel="noopener">Visit Website ↗</a>
+        </article>
       </div>
     </section>
 
     <section class="container section reveal" id="contact">
+      <div class="section-float-icons" aria-hidden="true">
+        <img class="float-icon is-faint" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg" alt="" style="top: 15%; left: 4%; animation-duration: 9s; animation-delay: -2s;" />
+        <img class="float-icon is-faint" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="" style="top: 68%; left: 90%; animation-duration: 10s; animation-delay: -4s;" />
+        <img class="float-icon is-faint" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="" style="top: 20%; left: 92%; animation-duration: 8.5s; animation-delay: -1s;" />
+      </div>
+
       <div class="contact-card glow-border">
         <p class="kicker">LET’S BUILD</p>
         <h2>Need a freelancer who can handle frontend, backend, and DevOps?</h2>
@@ -234,6 +274,33 @@
       </div>
     </section>
   </main>
+
+  <div class="project-modal" id="projectModal" hidden>
+    <div class="project-modal-backdrop" id="projectModalBackdrop"></div>
+    <div class="project-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modalProjectTitle">
+      <button class="project-modal-close" id="projectModalClose" aria-label="Close project details">✕</button>
+
+      <div class="project-modal-gallery">
+        <img id="modalImage" src="" alt="" class="project-modal-image" />
+        <button class="project-modal-nav prev" id="modalPrevImg" aria-label="Previous screenshot">←</button>
+        <button class="project-modal-nav next" id="modalNextImg" aria-label="Next screenshot">→</button>
+        <div class="project-modal-dots" id="modalDots"></div>
+      </div>
+
+      <div class="project-modal-body">
+        <div class="project-stage-header">
+          <div>
+            <p class="project-kicker">PROJECT DETAILS</p>
+            <h3 id="modalProjectTitle">Loading project</h3>
+          </div>
+          <span class="project-badge" id="modalProjectBadge">—</span>
+        </div>
+        <p class="project-description" id="modalProjectDescription"></p>
+        <ul class="project-bullets" id="modalProjectBullets"></ul>
+        <a id="modalProjectLink" class="btn btn-primary project-link" href="#" target="_blank" rel="noopener">View project ↗</a>
+      </div>
+    </div>
+  </div>
 
   <footer class="container footer">
     <p>© <span id="year"></span> Computer Anything • Built with HTML, CSS, and Vanilla JS</p>
