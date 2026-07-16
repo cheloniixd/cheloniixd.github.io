@@ -1,5 +1,5 @@
 # Duncan Murchison
 
-## [Portfolio Site](https://www.duncanmurchison.dev/)
+## [Portfolio Site](https://cheloniixd.github.io/)
 
 The portfolio now uses local assets from `assets/img/` for the profile and project previews, plus devicon-based stack icons in the tech section.
