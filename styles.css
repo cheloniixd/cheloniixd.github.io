@@ -183,9 +183,16 @@ a {
 }
 
 .mobile-nav a {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
   padding: 0.85rem 1rem;
   border-bottom: 1px solid rgba(159, 176, 216, 0.16);
   color: var(--muted);
+}
+
+.mobile-nav .social-icon {
+  background-color: var(--muted);
 }
 
 .btn {
@@ -921,6 +928,54 @@ h1 {
     grid-template-columns: minmax(0, 1fr);
     min-height: auto;
     padding-top: 2rem;
+  }
+
+  .hero-right {
+    display: contents;
+  }
+
+  .hero-right .profile-card {
+    order: -1;
+    max-width: 100%;
+  }
+
+  .profile-card > .tilt-inner,
+  .profile-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .profile-image-wrap {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .profile-image {
+    width: 118px;
+  }
+
+  .status-pill {
+    position: static;
+    white-space: nowrap;
+    font-size: 0.68rem;
+  }
+
+  .profile-meta {
+    padding: 0;
+    flex: 1;
+    min-width: 0;
+  }
+
+  .profile-meta h2 {
+    font-size: 1.2rem;
+  }
+
+  .hero-right .exp-slider {
+    order: 1;
   }
 
   .hero-float-icons,
