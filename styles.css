@@ -978,10 +978,6 @@ h1 {
     order: 1;
   }
 
-  .hero-float-icons,
-  .section-float-icons {
-    display: none;
-  }
 }
 
 @media (max-width: 760px) {
