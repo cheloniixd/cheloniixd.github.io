@@ -1,408 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>Duncan Murchison - Personal Portfolio Site</title>
-    <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <!-- Bootstrap Icons-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-    <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
-    <!-- SimpleLightbox plugin CSS-->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
-    <link href="css/z.css" rel="stylesheet" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cheloniixd | Full Stack • DevOps • Security</title>
+  <meta name="description" content="Freelance full stack and DevOps engineer. Secure portals, automation, and high-converting web experiences." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <canvas id="bgParticles" aria-hidden="true"></canvas>
 
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top">
+        <span class="brand-orb"></span>
+        <span class="brand-text">Computer Anything</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#stack">Stack</a>
+        <a href="#projects">Projects</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="social-links" aria-label="Profile links">
+        <a href="https://github.com/cheloniixd" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
+          <span class="social-icon" style="--icon-src: url('https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/github.svg');"></span>
+        </a>
+        <a href="https://www.linkedin.com/in/duncan-murchison/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
+          <span class="social-icon" style="--icon-src: url('https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/linkedin.svg');"></span>
+        </a>
+        <a href="https://www.upwork.com/freelancers/~014f16904e75076409?mp_source=share" target="_blank" rel="noopener" aria-label="Upwork" title="Upwork">
+          <span class="social-icon" style="--icon-src: url('https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/upwork.svg');"></span>
+        </a>
+        <a href="https://drive.google.com/file/d/1lNOXDM4ODlL6eWJhsRUN8Bv0Iq936PAP/view?usp=drive_link" target="_blank" rel="noopener" class="resume-link">Resume ↗</a>
+      </div>
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">☰</button>
+    </div>
+    <div class="mobile-nav" id="mobileNav">
+      <a href="#stack">Stack</a>
+      <a href="#projects">Projects</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact">Contact</a>
+      <a href="https://github.com/cheloniixd" target="_blank" rel="noopener">GitHub ↗</a>
+      <a href="https://www.linkedin.com/in/duncan-murchison/" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <a href="https://www.upwork.com/freelancers/~014f16904e75076409?mp_source=share" target="_blank" rel="noopener">Upwork ↗</a>
+      <a href="https://drive.google.com/file/d/1lNOXDM4ODlL6eWJhsRUN8Bv0Iq936PAP/view?usp=drive_link" target="_blank" rel="noopener">Resume ↗</a>
+    </div>
+  </header>
 
-  <body id="#home">
+  <main>
+    <section class="hero container section reveal" id="home">
+      <div class="hero-float-icons" aria-hidden="true">
+        <img class="float-icon float-icon-1" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="" />
+        <img class="float-icon float-icon-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="" />
+        <img class="float-icon float-icon-3" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="" />
+        <img class="float-icon float-icon-4" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="" />
+        <img class="float-icon float-icon-5" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="" />
+        <img class="float-icon float-icon-6" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-original.svg" alt="" />
+      </div>
 
-    <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
-      <div class="container px-4 px-lg-5">
-        <a class="navbar-brand" href="#">Home</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+      <div class="hero-left">
+        <p class="eyebrow">FREELANCE • FULL STACK • DEVOPS • SECURITY-MINDED</p>
+        <h1>
+          I build <span class="gradient">high-impact digital systems</span>
+          that scale, convert, and stay secure.
+        </h1>
+        <p class="hero-copy">
+          I help businesses ship client portals, automate operations, and launch polished websites that actually drive results.
+          Built with production-ready architecture and a security-first mindset.
+        </p>
 
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ms-auto my-2 my-lg-0">
-            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-            <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-            <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-            <li class="nav-item"><a class="nav-link" href="https://computeranything.dev/" target="_blank">Computer Anything</a></li>
+        <div class="type-wrap">
+          <span class="type-label">Specialty:</span>
+          <span id="typewriter"></span><span class="cursor">|</span>
+        </div>
+
+        <div class="hero-ctas">
+          <a href="#projects" class="btn btn-primary magnetic">View My Work</a>
+          <a href="#contact" class="btn btn-secondary magnetic">Start a Project</a>
+        </div>
+
+        <div class="proof-grid">
+          <article class="proof-card tilt-card">
+            <h3 data-counter="24">0</h3>
+            <p>Projects Delivered</p>
+          </article>
+          <article class="proof-card tilt-card">
+            <h3 data-counter="99">0</h3>
+            <p>Reliability Focus %</p>
+          </article>
+          <article class="proof-card tilt-card">
+            <h3 data-counter="48">0</h3>
+            <p>Typical Response (hrs)</p>
+          </article>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <article class="profile-card glow-border tilt-card">
+          <div class="profile-image-wrap">
+            <img src="/assets/img/profile.jpg" alt="Photo of Cheloniixd" class="profile-image" />
+            <span class="status-pill">● Available for Freelance</span>
+          </div>
+          <div class="profile-meta">
+            <h2>Duncan Murchison</h2>
+            <p>Full Stack Engineer • DevOps • Security Playbooks</p>
+          </div>
+        </article>
+
+        <div class="exp-slider" id="expSlider" aria-label="Experience highlights slider">
+          <div class="exp-track" id="expTrack">
+            <article class="exp-card glow-border">
+              <h4>Full Stack Development</h4>
+              <p>Build robust apps and portals with clean UX and dependable architecture.</p>
+            </article>
+            <article class="exp-card glow-border">
+              <h4>DevOps & Automation</h4>
+              <p>CI/CD, deployment workflows, infrastructure scripting, and reliability improvements.</p>
+            </article>
+            <article class="exp-card glow-border">
+              <h4>Security Hardening</h4>
+              <p>Security-first patterns, playbook-driven checks, and practical vulnerability reduction.</p>
+            </article>
+          </div>
+          <div class="slider-controls">
+            <button class="slider-btn" id="expPrev" aria-label="Previous">←</button>
+            <button class="slider-btn" id="expNext" aria-label="Next">→</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reveal stack-banner" id="stack" aria-label="Technology stack">
+      <div class="logo-marquee" aria-label="Technology stack marquee">
+        <div class="logo-track" id="skillsTrack"></div>
+      </div>
+    </section>
+
+    <section class="container section reveal" id="projects">
+      <div class="section-float-icons" aria-hidden="true">
+        <img class="float-icon is-faint" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" alt="" style="top: 8%; left: 3%; animation-duration: 9s;" />
+        <img class="float-icon is-faint" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="" style="top: 70%; left: 92%; animation-duration: 10s; animation-delay: -3s;" />
+        <img class="float-icon is-faint" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg" alt="" style="top: 55%; left: 5%; animation-duration: 8.5s; animation-delay: -5s;" />
+      </div>
+
+      <div class="section-head">
+        <p class="kicker">FEATURED WORK</p>
+        <h2>Selected projects across product, ops, and growth</h2>
+      </div>
+      <div class="project-showcase">
+        <article class="project-stage glow-border" aria-label="Featured project">
+          <div class="project-stage-header">
+            <div>
+              <p class="project-kicker">CURRENT PROJECT</p>
+              <h3 id="projectTitle">Loading project</h3>
+            </div>
+            <span class="project-badge" id="projectBadge">—</span>
+          </div>
+
+          <div class="project-stage-body">
+            <div class="project-stage-media tilt-card">
+              <img id="projectImage" src="" alt="" class="project-stage-image" />
+            </div>
+
+            <div class="project-stage-copy">
+              <p class="project-description" id="projectDescription"></p>
+              <ul class="project-bullets" id="projectBullets"></ul>
+              <a id="projectLink" class="btn btn-primary project-link" href="#" target="_blank" rel="noopener">View project ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <div class="project-rail-panel">
+          <div class="project-rail" id="projectRail" aria-label="Project thumbnails"></div>
+          <div class="project-controls">
+            <button class="slider-btn" id="projectPrev" aria-label="Previous project">←</button>
+            <button class="slider-btn" id="projectNext" aria-label="Next project">→</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container section reveal" id="testimonials">
+      <div class="section-float-icons" aria-hidden="true">
+        <img class="float-icon is-faint" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="" style="top: 12%; left: 92%; animation-duration: 9.5s; animation-delay: -1.5s;" />
+        <img class="float-icon is-faint" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" alt="" style="top: 65%; left: 4%; animation-duration: 8s; animation-delay: -4s;" />
+        <img class="float-icon is-faint" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" alt="" style="top: 20%; left: 6%; animation-duration: 11s; animation-delay: -2.5s;" />
+      </div>
+
+      <div class="section-head">
+        <p class="kicker">SOCIAL PROOF</p>
+        <h2>Client work and the results it delivered</h2>
+      </div>
+
+      <div class="testimonial-grid">
+        <article class="testimonial-card glow-border">
+          <div class="proof-header">
+            <div class="proof-logo">TC</div>
+            <div class="proof-meta">
+              <h4>Tulla Contracting</h4>
+              <p class="proof-industry">Construction / Contracting</p>
+            </div>
+          </div>
+          <p class="proof-project">Short summary of the project delivered and the problem it solved.</p>
+          <ul class="proof-tags">
+            <li>Web Development</li>
+            <li>Responsive Design</li>
+            <li>User Experience</li>
           </ul>
-        </div>
+          <blockquote class="proof-quote">
+            “Working with Duncan was an absolute game-changer for our company. From the
+            very first consultation, he demonstrated an impressive depth of knowledge, creativity, and professionalism
+            that immediately put us at ease. Duncan took the time to understand our brand, our values, and the unique
+            challenges of the contracting industry, translating all of that into a stunning, user-friendly website that
+            exceeded every expectation.”
+          </blockquote>
+          <a href="https://tullacontracting.com/" class="proof-link" target="_blank" rel="noopener">Visit Website ↗</a>
+        </article>
 
-      </div>
-    </nav>
-
-
-    <!-- Masthead-->
-    <header class="masthead">
-      <div class="container px-4 px-lg-5 h-100">
-        <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
-
-          <div class="col-lg-8 align-self-end">
-            <img class="portfolio-pic" src="./assets/img/profile.jpg" alt="">
-            <h1 class="text-white font-weight-bold">Duncan Murchison</h1>
-            <hr class="divider" />
-          </div>
-
-          <div class="col-lg-8 align-self-baseline">
-            <p class="text-white-75 mb-5">Software Engineer with a passion for hard work and team oriented environments.</p>
-            <div class="headerButtons">
-              <a class="btn btn-primary btn-xl" href="#about">Find Out More</a>
+        <article class="testimonial-card glow-border">
+          <div class="proof-header">
+            <div class="proof-logo">SHVC</div>
+            <div class="proof-meta">
+              <h4>Stellar Horizon Venture Corp</h4>
+              <p class="proof-industry">Industry / sector</p>
             </div>
           </div>
+          <p class="proof-project">Short summary of the project delivered and the problem it solved.</p>
+          <ul class="proof-tags">
+            <li>DNS Security</li>
+            <li>Email Authentication</li>
+            <li>DMARC Setup</li>
+          </ul>
+          <blockquote class="proof-quote">
+            “I can't say enough good things about working with Duncan. I ran into a major DNS issue while connecting my
+            Google Workspace and Squarespace accounts that completely broke my email. I could still receive messages,
+            but I couldn't send anything, which became a huge problem because we had important client meetings coming
+            up and I couldn't even send the calendar invites. Duncan jumped in right away, tracked down every issue
+            with my DNS records, corrected the configuration, and also set up DMARC properly so my emails would stop
+            getting rejected or ending up in spam. He explained what was wrong, fixed everything much faster than I
+            expected, and made sure it was all working before wrapping up. Because he got everything resolved so
+            quickly, I was able to send out the meeting invitations, hold the meetings as planned, and ultimately
+            secure a major contract for my company. His work had a direct impact on our business. If you're dealing
+            with Google Workspace, Squarespace, DNS, email authentication, or anything similar, I would absolutely
+            recommend Duncan. He's knowledgeable, responsive, and gets the job done. We'll definitely be using him
+            again for our future IT needs”
+          </blockquote>
+          <a href="https://www.upwork.com/freelancers/~014f16904e75076409?mp_source=share" class="proof-link" target="_blank" rel="noopener">Visit Website ↗</a>
+        </article>
 
-        </div>
-      </div>
-    </header>
-
-
-    <!-- About-->
-    <section class="page-section bg-primary" id="about">
-      <div class="container px-4 px-lg-5">
-        <div class="row gx-4 gx-lg-5 justify-content-center">
-          <div class="col-lg-8 text-center">
-            <h2 class="text-white mt-0">About Me</h2>
-            <hr class="divider divider-light" />
-            <p class="text-white-75 mb-4">Hard worker, who works well with others.
-              My passion for technology and specifically software engineering started
-              shortly after I built my first computer, and became curious about computer software
-              and how it worked. I started learning programming languages on my own, eventually
-              getting into a software engineering bootcamp, and have been working as a professional
-              application developer for the past 4 years. I've moved from writing small scripts
-              to automate tasks, to building full-stack web applications and focusing on DevOps
-              and infrastructure management. Currently, I am focused on information security and
-              best practices, and am working towards my OSCP certification.
-            </p>
-            <p class="text-white-75 mb-4">Founder <a class="computerAnything" href="https://computeranything.dev/" target="_blank">Computer Anything LLC</a></p>
-            <a class="btn btn-light btn-xl" href="#skills">Technologies</a>
-          </div>
-        </div>
       </div>
     </section>
 
+    <section class="container section reveal" id="contact">
+      <div class="section-float-icons" aria-hidden="true">
+        <img class="float-icon is-faint" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg" alt="" style="top: 15%; left: 4%; animation-duration: 9s; animation-delay: -2s;" />
+        <img class="float-icon is-faint" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="" style="top: 68%; left: 90%; animation-duration: 10s; animation-delay: -4s;" />
+        <img class="float-icon is-faint" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="" style="top: 20%; left: 92%; animation-duration: 8.5s; animation-delay: -1s;" />
+      </div>
 
-    <!-- Skills Top -->
-    <section class="page-section" id="skills">
-      <div class="container px-4 px-lg-5">
-        <h2 class="text-center mt-0">Software Development Skills</h2>
-        <hr class="divider" />
-
-        <div class="row gx-4 gx-lg-5">
-
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="mt-5">
-              <img class="skills-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" />
-              <h3 class="h4 mb-2">JavaScript</h3>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="mt-5">
-              <img class="skills-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
-              <h3 class="h4 mb-2">Python</h3>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="mt-5">
-              <img class="skills-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg" />
-              <h3 class="h4 mb-2">Ruby</h3>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="mt-5">
-              <img class="skills-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" />
-              <h3 class="h4 mb-2">Java</h3>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="mt-5">
-              <img class="skills-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" />
-              <h3 class="h4 mb-2">C++</h3>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="mt-5">
-              <img class="skills-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
-              <h3 class="h4 mb-2">Node.js</h3>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="mt-5">
-              <img class="skills-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rails/rails-original-wordmark.svg" />
-              <h3 class="h4 mb-2">Rails</h3>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="mt-5">
-              <img class="skills-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg" />
-              <h3 class="h4 mb-2">FlaskAPI</h3>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="mt-5">
-              <img class="skills-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
-              <h3 class="h4 mb-2">React.js</h3>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="mt-5">
-              <img class="skills-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" />
-              <h3 class="h4 mb-2">MySQL</h3>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="mt-5">
-              <img class="skills-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" />
-              <h3 class="h4 mb-2">PostgreSQL</h3>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="mt-5">
-              <img class="skills-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" />
-              <h3 class="h4 mb-2">MongoDB</h3>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="mt-5">
-              <img class="skills-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" />
-              <h3 class="h4 mb-2">Docker</h3>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="mt-5">
-              <img class="skills-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-original.svg" />
-              <h3 class="h4 mb-2">Kubernetes</h3>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="mt-5">
-              <img class="skills-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nginx/nginx-original.svg" />
-              <h3 class="h4 mb-2">NGINX</h3>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="mt-5">
-              <img class="skills-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" />
-              <h3 class="h4 mb-2">Postman</h3>
-            </div>
-          </div>
-
-        <!-- Skills Bottom -->
+      <div class="contact-card glow-border">
+        <p class="kicker">LET’S BUILD</p>
+        <h2>Need a freelancer who can handle frontend, backend, and DevOps?</h2>
+        <p class="contact-copy">Tell me what you’re building and I’ll help you scope, architect, and ship it fast.</p>
+        <div class="hero-ctas center">
+          <a href="mailto:duncan@computeranything.dev" class="btn btn-primary magnetic">duncan@computeranything.dev</a>
+          <a href="https://computeranything.dev/contact" class="btn btn-secondary magnetic" target="_blank" rel="noopener">Book a Call</a>
         </div>
       </div>
     </section>
+  </main>
 
+  <footer class="container footer">
+    <p>© <span id="year"></span> Computer Anything • Built with HTML, CSS, and Vanilla JS</p>
+  </footer>
 
-    <!-- Portfolio Top -->
-    <section>
-      <div id="portfolio">
-        <div class="container-fluid p-0">
-          <h2 class="text-center mt-0">Portfolio</h2>
-          <hr class="divider" />
-          <div class="row g-0">
-
-            <!-- Portfolio row1 -->
-            <!-- Computer Anything Tech Blog -->
-            <div class="col-lg-4 col-sm-6">
-              <div class="project-name">
-                <a href="https://blog.computeranything.dev/" target="_blank">Computer Anything Tech Blog</a> | <a href="https://github.com/ComputerAnything/cpta_blog" target="_blank">GitHub</a>
-              </div>
-              <div class="project-category text-white-50">
-                <p>Full-stack blog platform with secure user authentication and full CRUD functionality. Features include post tagging, upvoting/downvoting, and commenting. Built with a Flask REST API and a React frontend, using Redux for state management. The application is fully dockerized, deployed on a self-managed VPS, and served using an NGINX reverse proxy.</p>
-              </div>
-            </div>
-            <!-- API Looter -->
-            <div class="col-lg-4 col-sm-6">
-              <div class="project-name">
-                <a href="https://apilooter.computeranything.dev/" target="_blank">API Looter</a> | <a href="https://github.com/ComputerAnything/api_looter" target="_blank">GitHub</a>
-              </div>
-              <div class="project-category text-white-50">
-                <p>Open-source developer tool that allows users to search, explore, and test a curated collection of free public APIs directly from their browser. The backend was built with Flask and PostgreSQL, dockerized, and hosted on a personal VPS with NGINX handling reverse proxying and HTTPS termination.</p>
-              </div>
-            </div>
-            <!-- SPII Redactor -->
-            <div class="col-lg-4 col-sm-6">
-              <div class="project-name">
-                <a href="https://github.com/ComputerAnything/spii_redactor" target="_blank">sPII Redactor (GitHub)</a>
-              </div>
-              <div class="project-category text-white-50">
-                <p>Jupyter Notebook that demonstrates the process of detecting and redacting Personally Identifiable Information (PII) from text extracted from images. It uses EasyOCR for Optical Character Recognition (OCR) and SpaCy for Named Entity Recognition (NER) to identify and redact sensitive information such as names, emails, phone numbers, and zip codes.</p>
-              </div>
-            </div>
-            <!-- Portfolio row2 -->
-            <!-- MadLibs Against Humanity -->
-            <div class="col-lg-4 col-sm-6">
-              <div class="project-name">
-                <a href="https://github.com/cheloniixd/madlibs_against_humanity" target="_blank">MadLibs Against Humanity (GitHub)</a>
-              </div>
-              <div class="project-category text-white-50">
-                <p>MadLibs rating application built using Node.js for the backend, React.js for the frontend, and MongoDB as the database. It is a full-stack application that includes full user authentication and allows users to create, read, update, delete, and rate MadLibs. Users can participate in MadLibs as well.</p>
-              </div>
-            </div>
-            <!-- Stuck Overclone -->
-            <div class="col-lg-4 col-sm-6">
-              <div class="project-name">
-                <a href="https://github.com/cheloniixd/stuck_overclone_app" target="_blank">Stuck OverClone (GitHub)</a>
-              </div>
-              <div class="project-category text-white-50">
-                <p>Clone of Stack Overflow application built with Ruby on Rails for the backend React.js and Redux for the frontend and state management. It uses a PostgreSQL database. It is a full-stack application that includes full user authentication and allows users to create, read, update, delete, upvote, downvote, and reply to posts.</p>
-              </div>
-            </div>
-
-          <!-- Portfolio Bottom -->
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <!-- Reference Clients Top -->
-    <section>
-      <div id="reference-clients">
-        <div class="container-fluid p-0">
-          <h2 class="text-center mt-0">Reference Clients</h2>
-          <hr class="divider" />
-          <div class="row g-0">
-
-            <!-- Reference Clients Row1 -->
-            <!-- Computer Anything Tech Blog -->
-            <div class="col-lg-4 col-sm-6">
-              <div class="project-name">
-                <a href="https://410labs.com/" target="_blank">410 Labs</a>
-              </div>
-              <div class="project-name">
-                <a href="https://chuck.email" target="_blank">Chuck</a> | <a href="https://mailstrom.co/" target="_blank">Mailstrom</a>
-              </div>
-              <div class="project-category text-white-50">
-                <p>
-                  At 410 Labs, I modernized legacy Ruby on Rails applications by
-                  upgrading to newer versions, refactoring code, and ensuring
-                  full test coverage. I integrated Stripe into the mobile
-                  backend, handling complex ActiveRecord and PostgreSQL
-                  migrations. My DevOps work included collaborating on Google
-                  Cloud and Kubernetes deployments, as well as streamlining
-                  Docker workflows for all environments. I also contributed to
-                  building RSpec and FactoryBot testing suites to ensure CI
-                  stability and supported both backend improvements and frontend
-                  feature rollouts.
-                </p>
-              </div>
-            </div>
-            <!-- API Looter -->
-            <div class="col-lg-4 col-sm-6">
-              <div class="project-name">
-                <a href="https://tulla-contracting-render.onrender.com/" target="_blank">Tulla Contracting</a>
-              </div>
-              <div class="project-category text-white-50">
-                <p>
-                  At Tulla Contracting, I led the full-stack development of a
-                  new company website, focusing on clean design and mobile
-                  responsiveness to improve the client-facing experience. I
-                  implemented a secure SMTP integration using PHP to streamline
-                  HR communications by allowing large files and images to be
-                  submitted directly from the site. Additionally, I built a
-                  role-based client and admin portal powered by PostgreSQL,
-                  giving clients real-time access to inventory management and
-                  administrators control over records and settings. The entire
-                  app was containerized with Docker and deployed via
-                  docker-compose on a self-hosted VPS, ensuring high
-                  availability and full infrastructure control.
-                </p>
-              </div>
-            </div>
-
-          <!-- Reference Clients Bottom -->
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <!-- Resume -->
-    <section class="page-section bg-primary text-white" id="resume">
-      <div class="container px-4 px-lg-5 text-center">
-        <h2 class="mb-4">Checkout my resume!</h2>
-        <a class="btn btn-light btn-xl" href="https://drive.google.com/file/d/1lNOXDM4ODlL6eWJhsRUN8Bv0Iq936PAP/view?usp=sharing" target={_blank}>Download Resume</a>
-      </div>
-    </section>
-
-
-    <!-- Contact -->
-    <section class="page-section" id="contact">
-      <div class="container px-4 px-lg-5">
-        <div class="row gx-4 gx-lg-5 justify-content-center">
-          <div class="col-lg-8 col-xl-6 text-center">
-            <h2 class="mt-0">Let's Get In Touch!</h2>
-            <hr class="divider" />
-          </div>
-        </div>
-        <!-- Email -->
-        <div class="contact-info">
-          <div class="row gx-4 gx-lg-5 justify-content-center">
-            <div class="col-lg-4 text-center mb-5 mb-lg-0">
-              <i class="bi-envelope fs-2 mb-3 text-muted"></i>
-              <div>
-                <a href="mailto: duncancmurchison@gmail.com">duncancmurchison@gmail.com</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer-->
-    <footer class="bg-dark py-5">
-      <!-- Contact info -->
-      <div class="contact-info-container">
-        <!-- Github -->
-        <div class="contact-info-div">
-          <a class="contact-info-link" href="https://github.com/cheloniixd" target="_blank">
-            <img src="https://img.icons8.com/nolan/64/github.png"/>
-            <p class="contact-info-txt">GitHub</p>
-          </a>
-        </div>
-        <!-- LinkedIn -->
-        <div class="contact-info-div">
-          <a class="contact-info-link" href="https://www.linkedin.com/in/duncan-murchison/" target="_blank">
-            <img src="https://img.icons8.com/nolan/64/linkedin-circled.png"/>
-            <p class="contact-info-txt">Linked In</p>
-          </a>
-        </div>
-      </div>
-    </footer>
-
-    <!-- SCRIPTS -->
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- SimpleLightbox plugin JS-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
-
-  </body>
+  <script src="js/scroll-anim.js" defer></script>
+  <script src="js/typewriter.js" defer></script>
+  <script src="js/tilt-cards.js" defer></script>
+  <script src="js/carousel.js" defer></script>
+  <script src="js/particles.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
 </html>
